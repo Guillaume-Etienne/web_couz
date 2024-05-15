@@ -95,12 +95,25 @@ p {
 .content2-3pic {
   flex-basis: 66.6%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 .content2-3pic img {
   max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.content2-3pictures {
+  flex-basis: 66.6%;
+  display: flex;
+}
+.content2-3pictures img {
+  width: 300px;
+}
+
+.separation {
+  height: 100px;
 }
 
 footer {
