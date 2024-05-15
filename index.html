@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="./css/general.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat:wght@300&family=Noto+Sans+Limbu&display=swap" rel="stylesheet">
+    <title>La Poumerole Charensat</title>
+    <meta name="description" content="votre guest house en Auvergne">
+    <meta name="keywords" content="accomodation, hotel, meditation, guesthouse, mediter, maison, accueil, nature, forêt, calme, logement, charme, boudhisme, recentrer, chaleureux, bienveillant">
+</head>
+<body>
+    <header>        
+        <nav id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
+            <ul>                
+                <li><a href="#lamaison" class="menuLinks">La maison</a></li>
+                <li><a href="#lejardin" class="menuLinks">Le jardin</a></li>
+                <li><a href="#loisirs" class="menuLinks">Les loisirs</a></li>
+                <li><a href="#plus" class="menuLinks">Les plus</a></li>
+                <li><a href="#village" class="menuLinks">le village</a></li>
+                <li><a href="#galerie" class="menuLinks">Galerie</a></li> 
+                <li><a href="#tarifs" class="menuLinks">Tarifs</a></li>
+                <li><a href="#disponible" class="menuLinks">Disponibilités</a></li>
+                <li><a href="#footlinks" class="menuLinks">Contact</a></li>
+            </ul>
+        </nav>      
+        <a href="#" id="openBtn">
+        <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        </a>        
+    </header>
+
+    <main>
+        <section id="intro" >
+            <h1>La Poumerole Charensat</h1>            
+        </section>
+        <section class="paragraph" id="about">
+            <h2>Bienvenu</h2>
+            <p id="welcometext">
+                Située à 500 m d’altitude au pied du Ventoux, dans la vallée du Toulourenc,
+                à 5 min à pied du village de Savoillans, cette maison vous offrira des vacances
+                comme vous les souhaitez ! <button class="hidden" id="togg1">+</button>  <!-- avant : classe mini / hidden-->
+            </p>          
+        </section>        
+    </main>
+    <footer>
+        <div id="footlinks">
+            <p>Cécile et Peer : +33 7 78 79 76 35</p>
+            <p>La Casa du Ventoux, quartier Jean Pascal, 84390 Savoillan</p>
+            <p> <a href="mailto:casaduventoux@gmail.com">casaduventoux@gmail.com</a></p>
+        </div>
+        <div id="socialnetworks">
+            <a href="#"><img src="./icons/facebook.svg" alt=""></a>
+            <a href="#"><img src="./icons/instagram.svg" alt=""></a>            
+        </div>
+        <div>
+            <p id="copyright">
+                © <a href="https://fto110.wixsite.com/air-tricks" target="_blank">Air Tricks prod</a>
+            </p>
+        </div>              
+    </footer>         
+</body>
+<!-- pour aos, lib d'animation des éléments  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script src="./js/aosPerso.js"></script>
+<script src="./js/burger.js"></script>
+</html>
