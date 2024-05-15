@@ -8,20 +8,18 @@ a {
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  min-width: 380px;
+  margin: 10px;
   background: rgb(250, 250, 250);
   color: black;
-  font-family: "Kalam", cursive;
+  font-family: "Helvetica";
   font-weight: lighter;
 }
 body em {
+  font-style: normal;
   text-shadow: 0 0 1px grey;
 }
 body a {
   font-weight: bold;
-  font-family: "Kalam", cursive;
 }
 
 header {
@@ -36,62 +34,21 @@ header {
   z-index: 1;
 }
 
+main {
+  max-width: 95%;
+  margin: auto;
+}
+
 h1, h2, h3 {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  color: black;
-}
-
-h1 {
-  font-size: 1.6em;
-  letter-spacing: 0.1em;
-  margin-top: 40px;
-}
-
-h2 {
-  font-size: 1.1em;
+  display: none;
 }
 
 p {
-  font-size: 0.9em;
-}
-
-.traithorizon {
-  display: inline-block;
-  border-top: 0.5px solid grey;
-  width: 70px;
-  margin: 10px 10px 3px 10px;
-}
-
-.italic {
-  font-style: italic;
-  letter-spacing: 0.1em;
-}
-
-.txtjustify {
-  text-align: justify;
-}
-
-#welcometext {
-  margin: 40px 9%;
-  text-align: justify;
-}
-
-.mini {
-  display: inline !important;
-  width: 40px !important;
-  margin: 0 !important;
-  background: transparent !important;
-  border: solid 1px grey !important;
-  border-radius: 10px;
-  color: black;
-  font-family: Arial;
   font-size: 1em;
-  font-weight: 100;
-  padding: 5px;
-  text-align: center;
-  background: white;
+}
+
+.paraphstandard {
+  text-align: justify;
 }
 
 .hidden {
@@ -102,13 +59,30 @@ p {
   display: none;
 }
 
-.times {
-  font-family: "Times New Roman", Times, serif;
+img {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: auto;
 }
 
-img {
-  margin-top: 50px;
+.content {
+  display: flex;
+  flex-direction: row;
   width: 100%;
+}
+
+.content1-3 {
+  flex-basis: 33.3%;
+  display: flex;
+  justify-content: center;
+}
+
+.content2-3 {
+  flex-basis: 66.6%;
+  background-color: cyan;
+  display: flex;
+  justify-content: end;
 }
 
 .paragraph {
@@ -120,80 +94,11 @@ img {
   line-height: 2em;
 }
 
-.white {
-  background-color: white;
-  margin: -80px 33% 0 33%;
-  height: 80px;
-  max-width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-.white p {
-  margin: 0;
-  padding: 0;
-}
-.white button {
-  width: 60%;
-  color: black;
-  background: white;
-  border: solid 1px black;
-}
-
-#nosservices {
-  margin-top: 40px;
-}
-
-.listing {
-  display: flex;
-  flex-direction: column;
-}
-
-figure {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-figure img {
-  width: 30px;
-}
-
-figcaption {
-  width: 90%;
-  max-width: 480px;
-}
-figcaption h4 {
-  text-align: center;
-}
-
-.hes-gallery {
-  display: flex;
-  flex-wrap: wrap;
-}
-.hes-gallery img {
-  margin: 5px;
-  width: auto;
-  min-width: 200px;
-  max-width: 300px;
-}
-
-main {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-}
-main p {
-  text-align: center;
-  margin: 0 5px;
-}
-
 footer {
   margin-top: 0;
   padding: 10px;
   color: white;
-  display: flex;
+  display: none;
   flex-direction: column;
   background: black;
   text-align: center;
@@ -231,10 +136,6 @@ footer #footicons img {
   font-size: 0.9em;
   font-weight: 100;
   color: white;
-  margin-top: 20px;
-}
-
-#copyright {
   margin-top: 20px;
 }
 
@@ -278,59 +179,25 @@ footer #footicons img {
     color: white;
   }
   body {
-    margin: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 380px;
     box-shadow: 0 0 1em #D9D9D9;
   }
   main {
-    max-width: 1000px;
-    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  main p {
+    text-align: center;
+    margin: 0 5px;
   }
   .burger-icon span, .sidenav .close {
     display: none;
   }
   .hiddenmobile {
     display: block;
-  }
-  #intro {
-    margin-top: 38px;
-  }
-  #welcometext {
-    margin: 40px 9%;
-    text-align: center;
-  }
-  .white {
-    margin: -270px auto 90px auto;
-    padding: 10px;
-    min-height: 250px;
-    height: auto;
-    width: 30%;
-    max-width: none;
-  }
-  .white button {
-    width: 200px;
-  }
-  .listing {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  figcaption {
-    max-width: 290px;
-  }
-  #dispo {
-    display: none;
-  }
-  #nosservices {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  #nosservices figure {
-    width: 300px;
-  }
-  #gmaps {
-    height: 600px;
   }
   footer {
     box-shadow: 0px 0px 10px darkgrey;

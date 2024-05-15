@@ -41,12 +41,19 @@
         }
     }
     body{
-        margin: auto;
+        margin: 0;    
+        padding: 0;
+        min-width: 380px;  
         box-shadow: 0 0 1em #D9D9D9;
     }
     main{
-        max-width: 1000px;
-        margin: auto;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        & p{
+            text-align: center;
+            margin: 0 5px;
+        }        
     }
     .burger-icon span, .sidenav .close{
         display: none;
@@ -54,56 +61,7 @@
     .hiddenmobile{
         display: block;
     }
-    // ---------------- la page elle même  -------------
-    #intro{
-        margin-top: 38px;
-    }
-    #welcometext{
-        margin: 40px 9%;
-        text-align: center;
-    }
-    $whitheight:250px;
-    .white{        
-        margin: -($whitheight+20) auto 90px auto;                
-        padding: 10px;
-        min-height: $whitheight;
-        height: auto;
-        width: 30%;
-        max-width: none;
-        & button {
-            width: 200px;            
-        }
-    }
-    .listing{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    figcaption
-    {
-        max-width: 290px;
-    }
-    #dispo{
-        display: none;
-    }
-    #nosservices{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        & figure{
-            width: 300px;
-        }
-    }   
-   
-    #lamaison{        
-        // background-attachment: fixed;
-        // background-position: center;
-        // // background-repeat: no-repeat;        
-    }
-    #gmaps{        
-        height:600px;        
-    }
+    // ---------------- la page elle même  -------------        
     footer{
         box-shadow: $shadowmobile;
         display:flex;
