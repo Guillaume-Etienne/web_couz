@@ -5,7 +5,8 @@
 // general, puis Accueil, prix, galerie, infos
 
 *{
-    box-sizing: border-box;     
+    box-sizing: border-box;
+    margin: 10px;   
 }
 a{
     text-decoration: none;
@@ -13,7 +14,7 @@ a{
 }
 body
 {
-    margin:10px;      
+    margin:20px;      
     background: $colorbackground;
     color: $colorprimary;    
     font-family: 'Helvetica';
@@ -38,31 +39,25 @@ header{
     z-index: 1;
 }
 main{
-    max-width: 95%;
+    max-width: 1640px;
     margin: auto;    
 }
 h1, h2, h3{
     display: none;
 }
 p{
-    font-size: 1em;
-}
-.paraphstandard{
+    font-size: 1.5em;
+    letter-spacing : 1.5px;
+    //word-spacing : x;
+    line-height: 1.5em;
     text-align: justify;
-}    
+}
 .hidden{
     display: none;
 }
 .hiddenmobile{
     display: none;
 }
-img {
-    margin:0;
-    padding: 0;
-    width: 200px;
-    height: auto;
-}
-
 .content{
     display: flex;
     flex-direction:row;
@@ -72,20 +67,35 @@ img {
     flex-basis: 33.3%;
     display: flex;
     justify-content: center;
+    & img {
+        margin:0;
+        padding: 0;
+        max-width: 50%;
+        height: 90%;
+    }
+    & p{
+        margin: 30px 50px;
+    }
 }
 .content2-3{
-    flex-basis: 66.6%;
-    background-color: cyan;
+    flex-basis: 66.6%;    
     display: flex;
     justify-content: end;
-}
-.paragraph{
-    margin: 50px 30px 0 30px;
-    & p{
-        color: $colorgreytext1;
-        margin: 40px 10px;
-        line-height: 2em;
+    & img {
+        margin:0;
+        padding: 0;
+        max-width: 50%;
+        height: auto;
     }
+}
+.content2-3pic{
+    flex-basis: 66.6%;    
+    display: flex;
+    justify-content: center; 
+    & img {
+        max-width: 100%;
+        object-fit: contain;
+    }    
 }
 footer{
     margin-top: 0;
