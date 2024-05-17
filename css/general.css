@@ -151,6 +151,10 @@ p {
   max-width: 800px;
 }
 
+#plan2 img {
+  max-width: 400px;
+}
+
 footer {
   margin-top: 0;
   padding: 10px;
@@ -196,6 +200,19 @@ footer #footicons img {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1444px) {
+  .content2-3pictures img {
+    width: 200px;
+  }
+  #plan2 img {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  * {
+    margin: 0;
+  }
+}
 @media screen and (max-width: 1280px) {
   header {
     position: sticky;
