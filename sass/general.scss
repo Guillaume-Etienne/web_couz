@@ -46,11 +46,13 @@ h1, h2, h3{
     display: none;
 }
 p{
-    font-size: 1.5em;
+    font-size: 1.6em;
     letter-spacing : 1.5px;
+    font-weight: 400;
     //word-spacing : x;
     line-height: 1.5em;
     text-align: justify;
+    color: $colorprimary;
 }
 .hidden{
     display: none;
@@ -65,7 +67,7 @@ p{
 }
 .content1-3{
     flex-basis: 33.3%;
-    display: flex;
+    display: flex;    
     justify-content: center;
     & img {
         margin:0;
@@ -74,7 +76,7 @@ p{
         height: 90%;
     }
     & p{
-        margin: 30px 50px;
+        margin: 30px 50px;        
     }
 }
 .content2-3{
@@ -98,15 +100,49 @@ p{
         object-fit: contain;
     }    
 }
-.content2-3pictures{
+.content2-3pictures{    
     flex-basis: 66.6%;    
-    display: flex;     
+    display: flex;
+    align-items: stretch; //tailles alignées sur la plus grande
+    justify-content: end;
+    & :nth-child(1){
+        flex: 2 1 0;
+    }
+    & :nth-child(2){
+        flex: 3 1 0;        
+    }
+    & :nth-child(3){
+        flex: 2 1 0;
+    }
     & img {
-        width: 300px ;
+        width: 300px;
     }    
 }
 .separation{
     height: 100px;
+}
+.content1-3text{
+    flex-basis: 66.6%;
+    //display: flex;    
+    & p{
+        margin: 30px 50px;
+    }
+}
+.content2-3text{
+    flex-basis: 33.3%;
+    display: flex;    
+    justify-content: end;
+    & img {
+        margin:0;
+        padding: 0;
+        max-width: 100%;
+        //height: 300px;
+    }
+}
+#plan1{
+    & img{
+        max-width: 800px;
+    }
 }
 footer{
     margin-top: 0;

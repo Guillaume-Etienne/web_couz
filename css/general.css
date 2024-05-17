@@ -5,13 +5,13 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(14, 82, 68);
 }
 
 body {
   margin: 20px;
   background: white;
-  color: black;
+  color: rgb(14, 82, 68);
   font-family: "Helvetica";
   font-weight: lighter;
 }
@@ -45,10 +45,12 @@ h1, h2, h3 {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.6em;
   letter-spacing: 1.5px;
+  font-weight: 400;
   line-height: 1.5em;
   text-align: justify;
+  color: rgb(14, 82, 68);
 }
 
 .hidden {
@@ -107,6 +109,17 @@ p {
 .content2-3pictures {
   flex-basis: 66.6%;
   display: flex;
+  align-items: stretch;
+  justify-content: end;
+}
+.content2-3pictures :nth-child(1) {
+  flex: 2 1 0;
+}
+.content2-3pictures :nth-child(2) {
+  flex: 3 1 0;
+}
+.content2-3pictures :nth-child(3) {
+  flex: 2 1 0;
 }
 .content2-3pictures img {
   width: 300px;
@@ -114,6 +127,28 @@ p {
 
 .separation {
   height: 100px;
+}
+
+.content1-3text {
+  flex-basis: 66.6%;
+}
+.content1-3text p {
+  margin: 30px 50px;
+}
+
+.content2-3text {
+  flex-basis: 33.3%;
+  display: flex;
+  justify-content: end;
+}
+.content2-3text img {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+#plan1 img {
+  max-width: 800px;
 }
 
 footer {
