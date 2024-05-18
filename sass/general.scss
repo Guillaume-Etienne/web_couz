@@ -22,10 +22,7 @@ body
     & em{
         font-style:normal;         
         text-shadow: 0 0 1px $textshadow;
-    }
-    & a {
-        font-weight: bold;        
-    }
+    }    
 }
 header{    
     display: none;
@@ -149,50 +146,18 @@ p{
         max-width: 400px;
     }
 }
-footer{
-    margin-top: 0;
-    padding: 10px;
-    color: white;
-    display: none;
-    flex-direction: column;
-    background: black;
-    text-align: center;    
-    & p {
-        margin-top: 0;
-    }
-    & a {
-        color: white;
-        font-family: 'Kalam', cursive;
-        
-    }
-    & img{
-        margin-top: 0;
-        height: 50px;
-        width: auto;
-        background: white;
-        padding: 8px;
-        border-radius: 20px;
-    }
-    & #footicons{
-        display: flex;
-        padding: 0;
-        justify-content:center;
-        & img{
-            width: 50px;
-            margin: 10px 20px 10px 20px;
-        }
-    }    
-}
-#footlinks{    
+#contact{
+    margin-top: 200px;
     display: flex;
-    flex-direction: column;
-    & a{        
-        font-size: 0.9em;
-        font-weight: 100;
-        color: white;
-        margin-top: 20px;
-    }
+    align-items: center;
+    justify-content: center;
 }
+#envelope {
+    margin-right: 0;
+    width: 40px;
+    color: $colorprimary;
+}
+
 
 // le responsive
 @import "./responsive";

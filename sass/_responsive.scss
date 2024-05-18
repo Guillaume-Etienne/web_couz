@@ -67,8 +67,17 @@
             max-width: 100%;
         }
     }
+    #contact{
+        margin-top: 10px;        
+        justify-content: start;   
+    }
+    #envelope{
+        margin: 10px 10px 10px 20px;
+        width: 30px;
+    }
 }
 
+// Menu Burger
 @media screen and (max-width: 1280px) {
     header{
         position:sticky;
@@ -115,20 +124,6 @@
     }
     .hiddenmobile{
         display: block;
-    }
-    // ---------------- la page elle même  -------------        
-    footer{
-        box-shadow: $shadowmobile;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;   
-        & img{
-            margin: 10px 20px 10px 20px;
-        }
-        & a, p{
-            margin-top: 0px;
-        }
-    }      
+    }    
 }
 
